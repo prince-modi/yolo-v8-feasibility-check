@@ -37,4 +37,4 @@ for i,image in enumerate(images):
     jpeg=results[-1].plot(conf=True, labels=True, boxes=True, masks=True, probs=True)
     cv2.imwrite(f"results/{i}.jpg",jpeg)
     w1=time.time()
-    print(f"{img},{cls},{conf},{names},{i2-i1:0,.3f},{r1-i2:0,.3f},{w1-r1:0,.3f}")
+    print(f"{i},{cls},{conf},{names},{i2-i1:0,.3f},{r1-i2:0,.3f},{w1-r1:0,.3f}")
